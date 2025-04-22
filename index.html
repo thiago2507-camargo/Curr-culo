@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
@@ -20,6 +23,7 @@
 
     <section class="descricao">
         <p>Coloque uma breve descricao</p>
+        <button id="botao">continue aqui</button>
     </section>
 
     <section class="conteudo">
@@ -41,7 +45,8 @@
 
     <section class="falacomigo">
         <h2>Interessado no meu Currículo?</h2>
-        <form>
+        <form action="https://formspree.io/f/manoyqre"
+        method="POST">
             <label for="email">Email:</label>
             <input placeholder="example@email.com" type="email" id="email" name="email" required>
             <label for="telefone">Telefone:</label>
@@ -52,13 +57,15 @@
 
     <section class="autodescricao">
         <div class="eu">
+            <div id="card">
             <h2>Sobre Mim</h2>
             <p>informações sobre minha pessoa</p>
+        </div>
         </div>
 
         <div class="eu">
             <h2>Meu Canal</h2>
-            <iframe width="460" height="215" src="https://www.youtube.com/embed/lTG6V5Iv6DA?si=_dgV9hg6r-sOqM2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/N6kdD_x3v1g?si=oVCjMsGUQmjoi_bP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <div class="eu">
@@ -66,6 +73,8 @@
             <p>"Nada como um dia após o outro dia"</p>
         </div>
     </section>
+
+<script src="index.js"></script>
 
 </body>
 </html>
